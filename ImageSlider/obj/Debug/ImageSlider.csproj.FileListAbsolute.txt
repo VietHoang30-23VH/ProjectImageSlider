@@ -1,0 +1,10 @@
+D:\Winform\ImageSlider\ImageSlider\bin\Debug\ImageSlider.exe.config
+D:\Winform\ImageSlider\ImageSlider\bin\Debug\ImageSlider.exe
+D:\Winform\ImageSlider\ImageSlider\bin\Debug\ImageSlider.pdb
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.csproj.AssemblyReference.cache
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Form1.resources
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Properties.Resources.resources
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.csproj.GenerateResource.cache
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.csproj.CoreCompileInputs.cache
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.exe
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.pdb
