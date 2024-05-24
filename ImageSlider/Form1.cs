@@ -51,11 +51,11 @@ namespace ImageSlider
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     listBox1.Items.Clear();
-                    FolderPath = Path.GetDirectoryName(openFileDialog.FileNames[0]); // Lấy đường dẫn thư mục chứa tệp được chọn
+                    FolderPath = Path.GetDirectoryName(openFileDialog.FileNames[0]); 
 
                     foreach (string fileName in openFileDialog.FileNames)
                     {
-                        listBox1.Items.Add(Path.GetFileName(fileName)); // Thêm tên tệp vào danh sách
+                        listBox1.Items.Add(Path.GetFileName(fileName)); 
                     }
 
                     listBox1.SelectedIndex = indexImage = 0;

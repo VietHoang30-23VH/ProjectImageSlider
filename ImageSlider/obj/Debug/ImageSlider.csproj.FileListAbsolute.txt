@@ -8,3 +8,15 @@ D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.csproj.GenerateResource
 D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.csproj.CoreCompileInputs.cache
 D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.exe
 D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.pdb
+D:\Winform\ImageSlider\ImageSlider\bin\Debug\Guna.UI2.dll
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Slider.resources
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Usercontrol.Preview.resources
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Usercontrol.Sourcecs.resources
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Login.resources
+D:\Winform\ImageSlider\ImageSlider\bin\Debug\Database1.mdf
+D:\Winform\ImageSlider\ImageSlider\bin\Debug\Database1_log.ldf
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSli.011177E6.Up2Date
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Signup.resources
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.ForgotPassword.resources
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Role.resources
+D:\Winform\ImageSlider\ImageSlider\obj\Debug\ImageSlider.Usercontrol.Client.resources
