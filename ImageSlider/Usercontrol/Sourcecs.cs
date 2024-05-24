@@ -40,15 +40,7 @@ namespace ImageSlider.Usercontrol
         }
         private void DisplayFileContent(string filePath)
         {
-            // Lấy đuôi của file vd như .txt 
-            string extension = Path.GetExtension(filePath).ToLowerInvariant();
-            if (extension == ".png" || extension == ".jpg" || extension == ".jpeg")
-            {
-                Image Image image = Image.FromFile(filePath);
-                // Điều chỉnh độ rộng của ảnh để phù hợp với pictrueBox
-                pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                pictureBox.Image = image;
-            }
+            
         }
     }
 }

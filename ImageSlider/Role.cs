@@ -24,7 +24,7 @@ namespace ImageSlider
 
         private void btnServer_Click(object sender, EventArgs e)
         {
-             Slider slider = new Slider();
+             Server slider = new Server();
             slider.ShowDialog();
         }
 
