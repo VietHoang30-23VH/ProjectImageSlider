@@ -59,5 +59,15 @@ namespace ImageSlider.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _22520442_lab3_2_task1 {
+            get {
+                object obj = ResourceManager.GetObject("22520442_lab3.2_task1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

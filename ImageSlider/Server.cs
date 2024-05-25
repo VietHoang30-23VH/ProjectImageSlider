@@ -97,26 +97,24 @@ namespace ImageSlider
             }
         }
 
-        private void LoadImage(string directoryPath)
+        private void LoadImages(string[] filePaths)
         {
             if (imageList1 == null)
             {
                 imageList1 = new ImageList();
             }
 
-            string[] files = Directory.GetFiles(directoryPath, "*.*")
-                                      .Where(f => f.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase)
-                                               || f.EndsWith(".jpeg", StringComparison.OrdinalIgnoreCase)
-                                               || f.EndsWith(".png", StringComparison.OrdinalIgnoreCase)
-                                               || f.EndsWith(".bmp", StringComparison.OrdinalIgnoreCase)
-                                               || f.EndsWith(".gif", StringComparison.OrdinalIgnoreCase))
-                                      .ToArray();
-            foreach (string file in files)
+     
+           
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;  
+
+            foreach (string file in filePaths)
             {
                 try
                 {
                     using (Bitmap bmp = new Bitmap(file))
                     {
+                       
                         imageList1.Images.Add(new Bitmap(bmp));
                     }
                 }
@@ -126,12 +124,15 @@ namespace ImageSlider
                 }
             }
 
+
             if (imageList1.Images.Count > 0)
             {
-                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
                 pictureBox1.Image = imageList1.Images[imagenumber];
             }
         }
+
+
+
 
         private void Server_Load(object sender, EventArgs e)
         {
@@ -144,13 +145,16 @@ namespace ImageSlider
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+                openFileDialog.Multiselect = true;
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+                openFileDialog.Title = "Select Images";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string directoryPath = folderBrowserDialog.SelectedPath;
-                    Pathfile.Text = directoryPath;
-                    LoadImage(directoryPath);
+                    string[] filePaths = openFileDialog.FileNames;
+                    LoadImages(filePaths);
                 }
             }
         }
