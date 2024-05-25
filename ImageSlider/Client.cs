@@ -3,7 +3,6 @@ using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -17,7 +16,6 @@ namespace ImageSlider
         public Client()
         {
             InitializeComponent();
-           
         }
 
         private void Connect()
@@ -49,10 +47,19 @@ namespace ImageSlider
                     int receivedBytes = client.Receive(data);
                     if (receivedBytes > 0)
                     {
-                        byte[] actualData = new byte[receivedBytes];
-                        Array.Copy(data, actualData, receivedBytes);
-                        Image image = ByteArrayToImage(actualData);
-                        DisplayImage(image);
+                        using (MemoryStream ms = new MemoryStream(data, 0, receivedBytes))
+                        {
+                            using (BinaryReader reader = new BinaryReader(ms))
+                            {
+                                string filename = reader.ReadString();
+                                int imageLength = reader.ReadInt32();
+                                byte[] imageData = reader.ReadBytes(imageLength);
+
+                                Image image = ByteArrayToImage(imageData);
+                                DisplayImage(image);
+                                DisplayFilename(filename);
+                            }
+                        }
                     }
                 }
             }
@@ -82,9 +89,19 @@ namespace ImageSlider
             }
         }
 
+        private void DisplayFilename(string filename)
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() =>
+                {
+                    tbNameImage.Text = filename; 
+                }));
+            }
+        }
+
         private void Client_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)

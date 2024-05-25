@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Linq;
 
 namespace ImageSlider
 {
@@ -17,7 +17,8 @@ namespace ImageSlider
         private IPEndPoint IP;
         private Socket HostServer;
         private List<Socket> clientList;
-        
+        private List<Image> imageList;
+        private List<string> imageName;
 
         public Server()
         {
@@ -28,8 +29,9 @@ namespace ImageSlider
 
         private void InitializeCustomComponents()
         {
-            imageList1 = new ImageList();
             clientList = new List<Socket>();
+            imageList = new List<Image>();
+            imageName = new List<string>();
         }
 
         private void Connect()
@@ -70,19 +72,31 @@ namespace ImageSlider
 
         private void Send()
         {
-            if (imageList1.Images.Count > 0)
+            if (imageList != null && imageList.Count > 0)
             {
-                Image tmpImage = imageList1.Images[imagenumber];
+                Image tmpImage = imageList[imagenumber];
+                string tmpName = imageName[imagenumber];
                 byte[] imageData = ImageToByteArray(tmpImage);
-                foreach (Socket client in clientList.ToList())
+
+                using (MemoryStream ms = new MemoryStream())
                 {
-                    try
+                    using (BinaryWriter writer = new BinaryWriter(ms))
                     {
-                        client.Send(imageData);
+                        writer.Write(tmpName);
+                        writer.Write(imageData.Length);
+                        writer.Write(imageData);
                     }
-                    catch
+                    byte[] dataToSend = ms.ToArray();
+                    foreach (Socket client in clientList.ToList())
                     {
-                        clientList.Remove(client);
+                        try
+                        {
+                            client.Send(dataToSend);
+                        }
+                        catch
+                        {
+                            clientList.Remove(client);
+                        }
                     }
                 }
             }
@@ -99,24 +113,12 @@ namespace ImageSlider
 
         private void LoadImages(string[] filePaths)
         {
-            if (imageList1 == null)
-            {
-                imageList1 = new ImageList();
-            }
-
-     
-           
-            imageList1.ColorDepth = ColorDepth.Depth32Bit;  
-
             foreach (string file in filePaths)
             {
                 try
                 {
-                    using (Bitmap bmp = new Bitmap(file))
-                    {
-                       
-                        imageList1.Images.Add(new Bitmap(bmp));
-                    }
+                    imageList.Add(Image.FromFile(file));
+                    imageName.Add(Path.GetFileName(file));
                 }
                 catch (ArgumentException)
                 {
@@ -124,15 +126,12 @@ namespace ImageSlider
                 }
             }
 
-
-            if (imageList1.Images.Count > 0)
+            if (imageList.Count > 0)
             {
-                pictureBox1.Image = imageList1.Images[imagenumber];
+                pictureBox1.Image = imageList[imagenumber];
+                tbNameImage.Text = imageName[imagenumber];
             }
         }
-
-
-
 
         private void Server_Load(object sender, EventArgs e)
         {
@@ -161,20 +160,23 @@ namespace ImageSlider
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (imageList1 != null && imageList1.Images.Count > 0)
+            if (imageList != null && imageList.Count > 0)
             {
-                imagenumber = (imagenumber - 1 + imageList1.Images.Count) % imageList1.Images.Count;
-                pictureBox1.Image = imageList1.Images[imagenumber];
+                imagenumber = (imagenumber - 1 + imageList.Count) % imageList.Count;
+                pictureBox1.Image = imageList[imagenumber];
+                tbNameImage.Text = imageName[imagenumber];
+
                 Send();
             }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (imageList1 != null && imageList1.Images.Count > 0)
+            if (imageList != null && imageList.Count > 0)
             {
-                imagenumber = (imagenumber + 1) % imageList1.Images.Count;
-                pictureBox1.Image = imageList1.Images[imagenumber];
+                imagenumber = (imagenumber + 1) % imageList.Count;
+                pictureBox1.Image = imageList[imagenumber];
+                tbNameImage.Text = imageName[imagenumber];
                 Send();
             }
         }
