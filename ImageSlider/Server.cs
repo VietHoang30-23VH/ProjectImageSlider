@@ -20,12 +20,13 @@ namespace ImageSlider
         private List<string> clientNames;
         private List<Image> imageList;
         private List<string> imageName;
+        private bool isServerRunning = false;
+        private Thread ListenThread;
 
         public Server()
         {
             InitializeComponent();
             InitializeCustomComponents();
-            Send();
         }
 
         private void InitializeCustomComponents()
@@ -34,34 +35,6 @@ namespace ImageSlider
             clientNames = new List<string>();
             imageList = new List<Image>();
             imageName = new List<string>();
-        }
-
-        private void Connect()
-        {
-            IP = new IPEndPoint(IPAddress.Any, 8080);
-            HostServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
-            HostServer.Bind(IP);
-            Thread Listen = new Thread(() =>
-            {
-                try
-                {
-                    while (true)
-                    {
-                        HostServer.Listen(100);
-                        Socket client = HostServer.Accept();
-                        Thread clientThread = new Thread(() => HandleClient(client));
-                        clientThread.IsBackground = true;
-                        clientThread.Start();
-                    }
-                }
-                catch
-                {
-                    IP = new IPEndPoint(IPAddress.Any, 8080);
-                    HostServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
-                }
-            });
-            Listen.IsBackground = true;
-            Listen.Start();
         }
 
         private void HandleClient(Socket client)
@@ -77,10 +50,9 @@ namespace ImageSlider
                 {
                     clientList.Add(client);
                     clientNames.Add(clientName);
-                    lbClients.Items.Add(clientName); // Add client name to ListBox
+                    lbClients.Items.Add(clientName); // Thêm tên client vào ListBox
                 }));
-
-                // Keep receiving data from the client
+                SendCurrentImage(client);
                 while (true)
                 {
                     byte[] buffer = new byte[1024];
@@ -100,10 +72,39 @@ namespace ImageSlider
                     {
                         clientList.RemoveAt(index);
                         clientNames.RemoveAt(index);
-                        lbClients.Items.RemoveAt(index); // Remove client name from ListBox
+                        lbClients.Items.RemoveAt(index); // Xóa tên client từ ListBox
                     }
                 }));
                 client.Close();
+            }
+        }
+
+        private void SendCurrentImage(Socket client)
+        {
+            if (imageList != null && imageList.Count > 0)
+            {
+                Image tmpImage = imageList[imagenumber];
+                string tmpName = imageName[imagenumber];
+                byte[] imageData = ImageToByteArray(tmpImage);
+
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    using (BinaryWriter writer = new BinaryWriter(ms))
+                    {
+                        writer.Write(tmpName);
+                        writer.Write(imageData.Length);
+                        writer.Write(imageData);
+                    }
+                    byte[] dataToSend = ms.ToArray();
+                    try
+                    {
+                        client.Send(dataToSend);
+                    }
+                    catch
+                    {
+                        clientList.Remove(client);
+                    }
+                }
             }
         }
 
@@ -175,14 +176,11 @@ namespace ImageSlider
 
             if (imageList.Count > 0)
             {
+                imagenumber = 0;
                 pictureBox1.Image = imageList[imagenumber];
                 tbNameImage.Text = imageName[imagenumber];
+                Send();
             }
-        }
-
-        private void Server_Load(object sender, EventArgs e)
-        {
-            Connect();
         }
 
         private void btnUpload_Click(object sender, EventArgs e)
@@ -225,12 +223,72 @@ namespace ImageSlider
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            if (isServerRunning) return;
 
+            isServerRunning = true;
+            IP = new IPEndPoint(IPAddress.Any, 8080);
+            HostServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+            HostServer.Bind(IP);
+            ListenThread = new Thread(() =>
+            {
+                try
+                {
+                    while (isServerRunning)
+                    {
+                        HostServer.Listen(100);
+                        Socket client = HostServer.Accept();
+                        Thread clientThread = new Thread(() => HandleClient(client));
+                        clientThread.IsBackground = true;
+                        clientThread.Start();
+                    }
+                }
+                catch
+                {
+                    if (isServerRunning)
+                    {
+                        IP = new IPEndPoint(IPAddress.Any, 8080);
+                        HostServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+                    }
+                }
+            });
+            ListenThread.IsBackground = true;
+            ListenThread.Start();
+            MessageBox.Show("Bắt đầu trình chiếu");
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
+            if (!isServerRunning) return;
 
+            isServerRunning = false;
+            foreach (Socket client in clientList.ToList())
+            {
+                SendMessageToClient(client, "Máy chủ đã đóng kết nối");
+                client.Close();
+            }
+            clientList.Clear();
+            clientNames.Clear();
+            Invoke(new Action(() =>
+            {
+                lbClients.Items.Clear();
+            }));
+
+            if (HostServer != null)
+            {
+                HostServer.Close();
+            }
+
+            if (ListenThread != null)
+            {
+                ListenThread.Abort();
+            }
+            MessageBox.Show("Kết thúc trình chiếu");
+        }
+
+        private void SendMessageToClient(Socket client, string message)
+        {
+            byte[] messageData = System.Text.Encoding.UTF8.GetBytes(message);
+            client.Send(messageData);
         }
     }
 }

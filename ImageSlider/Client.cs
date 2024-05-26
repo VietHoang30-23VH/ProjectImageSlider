@@ -78,6 +78,16 @@ namespace ImageSlider
                     int receivedBytes = client.Receive(data);
                     if (receivedBytes > 0)
                     {
+                        string receivedMessage = System.Text.Encoding.UTF8.GetString(data, 0, receivedBytes);
+                        if (receivedMessage == "Máy chủ đã đóng kết nối")
+                        {
+                            MessageBox.Show(receivedMessage);
+                            client.Close();
+                            isConnected = false;
+                            ClearImageAndShowDisconnectMessage();
+                            break;
+                        }
+
                         using (MemoryStream ms = new MemoryStream(data, 0, receivedBytes))
                         {
                             using (BinaryReader reader = new BinaryReader(ms))
@@ -97,6 +107,23 @@ namespace ImageSlider
             catch
             {
                 client.Close();
+            }
+        }
+
+        private void ClearImageAndShowDisconnectMessage()
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() =>
+                {
+                    pictureBox1.Image = null;
+                    tbNameImage.Text = "";
+                }));
+            }
+            else
+            {
+                pictureBox1.Image = null;
+                tbNameImage.Text = "";
             }
         }
 

@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\server.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,44 +22,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Server.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.Designer.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Server.Designer.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.Designer.cs",
-              "RelativeToolTip": "ImageSlider\\Server.Designer.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAD4vz8AAABGAAAA",
+              "DocumentIndex": 2,
+              "Title": "Client.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Client.cs",
+              "RelativeDocumentMoniker": "ImageSlider\\Client.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Client.cs [Design]",
+              "RelativeToolTip": "ImageSlider\\Client.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T09:35:05.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T14:37:45.319Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Login.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Login.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Login.cs [Design]",
-              "RelativeToolTip": "ImageSlider\\Login.cs [Design]",
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Client.cs",
+              "RelativeDocumentMoniker": "ImageSlider\\Client.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Client.cs",
+              "RelativeToolTip": "ImageSlider\\Client.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAowH8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T08:32:28.003Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Server.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Server.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs [Design]",
-              "RelativeToolTip": "ImageSlider\\Server.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T04:34:38.63Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-26T14:33:44.003Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -73,7 +57,7 @@
               "RelativeDocumentMoniker": "ImageSlider\\Server.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs",
               "RelativeToolTip": "ImageSlider\\Server.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAASwNEAAAA6AAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAuwGsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T03:20:38.096Z",
               "EditorCaption": ""
