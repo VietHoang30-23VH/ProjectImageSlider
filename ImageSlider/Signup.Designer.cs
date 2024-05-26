@@ -31,14 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pictureHide2 = new System.Windows.Forms.PictureBox();
             this.pictureShow2 = new System.Windows.Forms.PictureBox();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pictureHide = new System.Windows.Forms.PictureBox();
             this.pictureShow = new System.Windows.Forms.PictureBox();
             this.btnSign = new System.Windows.Forms.Button();
-            this.txtConfirm = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,23 +51,19 @@
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtConfirm = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHide2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureShow2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -105,7 +105,90 @@
             this.panel1.Location = new System.Drawing.Point(88, 39);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(911, 479);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 0;
+            // 
+            // guna2CirclePictureBox4
+            // 
+            this.guna2CirclePictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox4.Image")));
+            this.guna2CirclePictureBox4.ImageRotate = 0F;
+            this.guna2CirclePictureBox4.Location = new System.Drawing.Point(428, 307);
+            this.guna2CirclePictureBox4.Name = "guna2CirclePictureBox4";
+            this.guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox4.Size = new System.Drawing.Size(47, 41);
+            this.guna2CirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox4.TabIndex = 24;
+            this.guna2CirclePictureBox4.TabStop = false;
+            // 
+            // guna2CirclePictureBox3
+            // 
+            this.guna2CirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox3.Image")));
+            this.guna2CirclePictureBox3.ImageRotate = 0F;
+            this.guna2CirclePictureBox3.Location = new System.Drawing.Point(428, 237);
+            this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
+            this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(47, 41);
+            this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox3.TabIndex = 23;
+            this.guna2CirclePictureBox3.TabStop = false;
+            // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
+            this.guna2CirclePictureBox2.ImageRotate = 0F;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(428, 169);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(47, 41);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox2.TabIndex = 22;
+            this.guna2CirclePictureBox2.TabStop = false;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(428, 104);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(47, 41);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 21;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(108, 18);
+            this.guna2HtmlLabel1.TabIndex = 20;
+            this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
+            // 
+            // pictureHide2
+            // 
+            this.pictureHide2.BackColor = System.Drawing.Color.White;
+            this.pictureHide2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureHide2.Image = ((System.Drawing.Image)(resources.GetObject("pictureHide2.Image")));
+            this.pictureHide2.Location = new System.Drawing.Point(809, 321);
+            this.pictureHide2.Name = "pictureHide2";
+            this.pictureHide2.Size = new System.Drawing.Size(45, 30);
+            this.pictureHide2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureHide2.TabIndex = 14;
+            this.pictureHide2.TabStop = false;
+            this.pictureHide2.Click += new System.EventHandler(this.pictureHide2_Click);
+            // 
+            // pictureShow2
+            // 
+            this.pictureShow2.BackColor = System.Drawing.Color.White;
+            this.pictureShow2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureShow2.Image = ((System.Drawing.Image)(resources.GetObject("pictureShow2.Image")));
+            this.pictureShow2.Location = new System.Drawing.Point(809, 321);
+            this.pictureShow2.Name = "pictureShow2";
+            this.pictureShow2.Size = new System.Drawing.Size(45, 28);
+            this.pictureShow2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureShow2.TabIndex = 15;
+            this.pictureShow2.TabStop = false;
+            this.pictureShow2.Click += new System.EventHandler(this.pictureShow2_Click);
             // 
             // btnClose
             // 
@@ -139,40 +222,14 @@
             this.guna2ImageButton1.TabIndex = 18;
             this.guna2ImageButton1.UseTransparentBackground = true;
             // 
-            // pictureHide2
-            // 
-            this.pictureHide2.BackColor = System.Drawing.Color.White;
-            this.pictureHide2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureHide2.Image = ((System.Drawing.Image)(resources.GetObject("pictureHide2.Image")));
-            this.pictureHide2.Location = new System.Drawing.Point(809, 296);
-            this.pictureHide2.Name = "pictureHide2";
-            this.pictureHide2.Size = new System.Drawing.Size(25, 30);
-            this.pictureHide2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureHide2.TabIndex = 14;
-            this.pictureHide2.TabStop = false;
-            this.pictureHide2.Click += new System.EventHandler(this.pictureHide2_Click);
-            // 
-            // pictureShow2
-            // 
-            this.pictureShow2.BackColor = System.Drawing.Color.White;
-            this.pictureShow2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureShow2.Image = ((System.Drawing.Image)(resources.GetObject("pictureShow2.Image")));
-            this.pictureShow2.Location = new System.Drawing.Point(809, 296);
-            this.pictureShow2.Name = "pictureShow2";
-            this.pictureShow2.Size = new System.Drawing.Size(25, 28);
-            this.pictureShow2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureShow2.TabIndex = 15;
-            this.pictureShow2.TabStop = false;
-            this.pictureShow2.Click += new System.EventHandler(this.pictureShow2_Click);
-            // 
             // pictureHide
             // 
             this.pictureHide.BackColor = System.Drawing.Color.White;
             this.pictureHide.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureHide.Image = ((System.Drawing.Image)(resources.GetObject("pictureHide.Image")));
-            this.pictureHide.Location = new System.Drawing.Point(809, 234);
+            this.pictureHide.Location = new System.Drawing.Point(809, 250);
             this.pictureHide.Name = "pictureHide";
-            this.pictureHide.Size = new System.Drawing.Size(25, 30);
+            this.pictureHide.Size = new System.Drawing.Size(45, 30);
             this.pictureHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureHide.TabIndex = 13;
             this.pictureHide.TabStop = false;
@@ -183,9 +240,9 @@
             this.pictureShow.BackColor = System.Drawing.Color.White;
             this.pictureShow.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureShow.Image = ((System.Drawing.Image)(resources.GetObject("pictureShow.Image")));
-            this.pictureShow.Location = new System.Drawing.Point(809, 236);
+            this.pictureShow.Location = new System.Drawing.Point(809, 250);
             this.pictureShow.Name = "pictureShow";
-            this.pictureShow.Size = new System.Drawing.Size(25, 28);
+            this.pictureShow.Size = new System.Drawing.Size(45, 28);
             this.pictureShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureShow.TabIndex = 12;
             this.pictureShow.TabStop = false;
@@ -198,29 +255,17 @@
             this.btnSign.Location = new System.Drawing.Point(428, 383);
             this.btnSign.Name = "btnSign";
             this.btnSign.Size = new System.Drawing.Size(426, 51);
-            this.btnSign.TabIndex = 9;
+            this.btnSign.TabIndex = 4;
             this.btnSign.Text = "Sign up";
             this.btnSign.UseVisualStyleBackColor = true;
             this.btnSign.Click += new System.EventHandler(this.btnSign_Click);
-            // 
-            // txtConfirm
-            // 
-            this.txtConfirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfirm.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirm.Location = new System.Drawing.Point(530, 296);
-            this.txtConfirm.Multiline = true;
-            this.txtConfirm.Name = "txtConfirm";
-            this.txtConfirm.PasswordChar = '*';
-            this.txtConfirm.Size = new System.Drawing.Size(304, 30);
-            this.txtConfirm.TabIndex = 8;
-            this.txtConfirm.Tag = "*";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(526, 274);
+            this.label5.Location = new System.Drawing.Point(509, 299);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(141, 19);
             this.label5.TabIndex = 7;
@@ -230,12 +275,11 @@
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(530, 236);
-            this.txtPassword.Multiline = true;
+            this.txtPassword.Location = new System.Drawing.Point(513, 250);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(304, 30);
-            this.txtPassword.TabIndex = 6;
+            this.txtPassword.Size = new System.Drawing.Size(341, 27);
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.Tag = "*";
             // 
             // label4
@@ -243,7 +287,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(530, 214);
+            this.label4.Location = new System.Drawing.Point(509, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 19);
             this.label4.TabIndex = 5;
@@ -253,18 +297,17 @@
             // 
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(530, 177);
-            this.txtEmail.Multiline = true;
+            this.txtEmail.Location = new System.Drawing.Point(513, 183);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(304, 30);
-            this.txtEmail.TabIndex = 4;
+            this.txtEmail.Size = new System.Drawing.Size(341, 27);
+            this.txtEmail.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(528, 155);
+            this.label3.Location = new System.Drawing.Point(509, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 19);
             this.label3.TabIndex = 3;
@@ -274,18 +317,17 @@
             // 
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUser.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(530, 118);
-            this.txtUser.Multiline = true;
+            this.txtUser.Location = new System.Drawing.Point(513, 118);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(304, 30);
-            this.txtUser.TabIndex = 2;
+            this.txtUser.Size = new System.Drawing.Size(341, 27);
+            this.txtUser.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(526, 91);
+            this.label2.Location = new System.Drawing.Point(509, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 19);
             this.label2.TabIndex = 1;
@@ -302,6 +344,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Registor";
             // 
+            // txtConfirm
+            // 
+            this.txtConfirm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtConfirm.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirm.Location = new System.Drawing.Point(513, 321);
+            this.txtConfirm.Name = "txtConfirm";
+            this.txtConfirm.PasswordChar = '*';
+            this.txtConfirm.Size = new System.Drawing.Size(341, 27);
+            this.txtConfirm.TabIndex = 3;
+            this.txtConfirm.Tag = "*";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -312,63 +365,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(108, 18);
-            this.guna2HtmlLabel1.TabIndex = 20;
-            this.guna2HtmlLabel1.Text = "guna2HtmlLabel1";
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(453, 107);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(47, 41);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 21;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // guna2CirclePictureBox2
-            // 
-            this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
-            this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(453, 166);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(47, 41);
-            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox2.TabIndex = 22;
-            this.guna2CirclePictureBox2.TabStop = false;
-            // 
-            // guna2CirclePictureBox3
-            // 
-            this.guna2CirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox3.Image")));
-            this.guna2CirclePictureBox3.ImageRotate = 0F;
-            this.guna2CirclePictureBox3.Location = new System.Drawing.Point(453, 223);
-            this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
-            this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(47, 41);
-            this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox3.TabIndex = 23;
-            this.guna2CirclePictureBox3.TabStop = false;
-            // 
-            // guna2CirclePictureBox4
-            // 
-            this.guna2CirclePictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox4.Image")));
-            this.guna2CirclePictureBox4.ImageRotate = 0F;
-            this.guna2CirclePictureBox4.Location = new System.Drawing.Point(453, 285);
-            this.guna2CirclePictureBox4.Name = "guna2CirclePictureBox4";
-            this.guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox4.Size = new System.Drawing.Size(47, 41);
-            this.guna2CirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox4.TabIndex = 24;
-            this.guna2CirclePictureBox4.TabStop = false;
             // 
             // Signup
             // 
@@ -385,15 +381,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHide2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureShow2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureShow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

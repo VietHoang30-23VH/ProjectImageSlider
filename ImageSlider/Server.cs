@@ -17,6 +17,7 @@ namespace ImageSlider
         private IPEndPoint IP;
         private Socket HostServer;
         private List<Socket> clientList;
+        private List<string> clientNames;
         private List<Image> imageList;
         private List<string> imageName;
 
@@ -30,6 +31,7 @@ namespace ImageSlider
         private void InitializeCustomComponents()
         {
             clientList = new List<Socket>();
+            clientNames = new List<string>();
             imageList = new List<Image>();
             imageName = new List<string>();
         }
@@ -47,7 +49,9 @@ namespace ImageSlider
                     {
                         HostServer.Listen(100);
                         Socket client = HostServer.Accept();
-                        clientList.Add(client);
+                        Thread clientThread = new Thread(() => HandleClient(client));
+                        clientThread.IsBackground = true;
+                        clientThread.Start();
                     }
                 }
                 catch
@@ -58,6 +62,49 @@ namespace ImageSlider
             });
             Listen.IsBackground = true;
             Listen.Start();
+        }
+
+        private void HandleClient(Socket client)
+        {
+            string clientName = "";
+            try
+            {
+                byte[] nameBuffer = new byte[1024];
+                int nameLength = client.Receive(nameBuffer);
+                clientName = System.Text.Encoding.UTF8.GetString(nameBuffer, 0, nameLength);
+
+                Invoke(new Action(() =>
+                {
+                    clientList.Add(client);
+                    clientNames.Add(clientName);
+                    lbClients.Items.Add(clientName); // Add client name to ListBox
+                }));
+
+                // Keep receiving data from the client
+                while (true)
+                {
+                    byte[] buffer = new byte[1024];
+                    int received = client.Receive(buffer);
+                    if (received == 0)
+                    {
+                        throw new SocketException(); // Client disconnected
+                    }
+                }
+            }
+            catch
+            {
+                Invoke(new Action(() =>
+                {
+                    int index = clientList.IndexOf(client);
+                    if (index >= 0)
+                    {
+                        clientList.RemoveAt(index);
+                        clientNames.RemoveAt(index);
+                        lbClients.Items.RemoveAt(index); // Remove client name from ListBox
+                    }
+                }));
+                client.Close();
+            }
         }
 
         private byte[] Serialize(object obj)
@@ -138,11 +185,7 @@ namespace ImageSlider
             Connect();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnUpload_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -158,19 +201,18 @@ namespace ImageSlider
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnPre_Click(object sender, EventArgs e)
         {
             if (imageList != null && imageList.Count > 0)
             {
                 imagenumber = (imagenumber - 1 + imageList.Count) % imageList.Count;
                 pictureBox1.Image = imageList[imagenumber];
                 tbNameImage.Text = imageName[imagenumber];
-
                 Send();
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnNext_Click(object sender, EventArgs e)
         {
             if (imageList != null && imageList.Count > 0)
             {
@@ -179,6 +221,16 @@ namespace ImageSlider
                 tbNameImage.Text = imageName[imagenumber];
                 Send();
             }
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

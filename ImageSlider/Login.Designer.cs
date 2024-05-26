@@ -30,10 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnLogin = new System.Windows.Forms.Button();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnHide = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnShow = new Guna.UI2.WinForms.Guna2ImageButton();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -43,9 +46,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnShow = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnHide = new Guna.UI2.WinForms.Guna2ImageButton();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -70,7 +70,22 @@
             this.panel1.Location = new System.Drawing.Point(472, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(423, 649);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 12;
+            // 
+            // btnClose
+            // 
+            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnClose.ImageRotate = 0F;
+            this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClose.Location = new System.Drawing.Point(380, -1);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.Size = new System.Drawing.Size(42, 43);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // btnLogin
             // 
@@ -79,7 +94,7 @@
             this.btnLogin.Location = new System.Drawing.Point(27, 531);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(377, 56);
-            this.btnLogin.TabIndex = 7;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -91,7 +106,7 @@
             this.linkLabel3.Location = new System.Drawing.Point(250, 473);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(158, 22);
-            this.linkLabel3.TabIndex = 6;
+            this.linkLabel3.TabIndex = 4;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Forgot Password?";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
@@ -103,7 +118,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(23, 473);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(71, 22);
-            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Sign up";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -122,14 +137,43 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Password:";
             // 
+            // btnHide
+            // 
+            this.btnHide.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnHide.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnHide.Image = ((System.Drawing.Image)(resources.GetObject("btnHide.Image")));
+            this.btnHide.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnHide.ImageRotate = 0F;
+            this.btnHide.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnHide.Location = new System.Drawing.Point(334, 26);
+            this.btnHide.Name = "btnHide";
+            this.btnHide.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnHide.Size = new System.Drawing.Size(41, 37);
+            this.btnHide.TabIndex = 9;
+            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
+            // 
+            // btnShow
+            // 
+            this.btnShow.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnShow.HoverState.ImageSize = new System.Drawing.Size(0, 0);
+            this.btnShow.Image = ((System.Drawing.Image)(resources.GetObject("btnShow.Image")));
+            this.btnShow.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnShow.ImageRotate = 0F;
+            this.btnShow.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnShow.Location = new System.Drawing.Point(334, 26);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnShow.Size = new System.Drawing.Size(41, 37);
+            this.btnShow.TabIndex = 9;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(63, 24);
-            this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(312, 41);
+            this.txtPassword.Size = new System.Drawing.Size(312, 27);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Tag = "*";
             // 
@@ -159,10 +203,9 @@
             // 
             this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(65, 25);
-            this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(312, 41);
-            this.txtUsername.TabIndex = 1;
+            this.txtUsername.Size = new System.Drawing.Size(312, 27);
+            this.txtUsername.TabIndex = 0;
             // 
             // pictureBox3
             // 
@@ -181,8 +224,8 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.label1.Location = new System.Drawing.Point(136, 217);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 50);
-            this.label1.TabIndex = 1;
+            this.label1.Size = new System.Drawing.Size(155, 49);
+            this.label1.TabIndex = 10;
             this.label1.Text = "Sign In";
             // 
             // pictureBox2
@@ -214,53 +257,8 @@
             this.label2.Location = new System.Drawing.Point(12, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(408, 105);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 11;
             this.label2.Text = "Image Slider ";
-            // 
-            // btnClose
-            // 
-            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnClose.ImageRotate = 0F;
-            this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClose.Location = new System.Drawing.Point(380, -1);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.Size = new System.Drawing.Size(42, 43);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
-            // 
-            // btnShow
-            // 
-            this.btnShow.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnShow.HoverState.ImageSize = new System.Drawing.Size(0, 0);
-            this.btnShow.Image = ((System.Drawing.Image)(resources.GetObject("btnShow.Image")));
-            this.btnShow.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnShow.ImageRotate = 0F;
-            this.btnShow.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnShow.Location = new System.Drawing.Point(334, 26);
-            this.btnShow.Name = "btnShow";
-            this.btnShow.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnShow.Size = new System.Drawing.Size(41, 37);
-            this.btnShow.TabIndex = 9;
-            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
-            // 
-            // btnHide
-            // 
-            this.btnHide.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnHide.HoverState.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnHide.Image = ((System.Drawing.Image)(resources.GetObject("btnHide.Image")));
-            this.btnHide.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnHide.ImageRotate = 0F;
-            this.btnHide.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnHide.Location = new System.Drawing.Point(334, 26);
-            this.btnHide.Name = "btnHide";
-            this.btnHide.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnHide.Size = new System.Drawing.Size(41, 37);
-            this.btnHide.TabIndex = 10;
-            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
             // 
             // Login
             // 

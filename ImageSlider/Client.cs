@@ -12,19 +12,32 @@ namespace ImageSlider
     {
         private IPEndPoint IP;
         private Socket client;
+        private bool isConnected = false;
 
         public Client()
         {
             InitializeComponent();
         }
 
-        private void Connect()
+        private void btnConnect_Click(object sender, EventArgs e)
         {
-            IP = new IPEndPoint(IPAddress.Parse(tbIP.Text), 8080);
+            if (string.IsNullOrWhiteSpace(txtIP.Text) || string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ IP và Name");
+                return;
+            }
+            if (isConnected)
+            {
+                return;
+            }
+            IP = new IPEndPoint(IPAddress.Parse(txtIP.Text), 8080);
             client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
             try
             {
                 client.Connect(IP);
+                isConnected = true;
+                MessageBox.Show("Kết nối thành công");
+                SendClientName(txtName.Text);
             }
             catch (Exception ex)
             {
@@ -35,6 +48,24 @@ namespace ImageSlider
             Thread listen = new Thread(Receive);
             listen.IsBackground = true;
             listen.Start();
+        }
+
+        private void btnDisconnect_Click(object sender, EventArgs e)
+        {
+            if (isConnected)
+            {
+                client.Close();
+                isConnected = false;
+                MessageBox.Show("Đã ngắt kết nối");
+                pictureBox1.Image = null;
+                tbNameImage.Text = string.Empty;
+            }
+        }
+
+        private void SendClientName(string clientName)
+        {
+            byte[] nameData = System.Text.Encoding.UTF8.GetBytes(clientName);
+            client.Send(nameData);
         }
 
         private void Receive()
@@ -98,15 +129,6 @@ namespace ImageSlider
                     tbNameImage.Text = filename; 
                 }));
             }
-        }
-
-        private void Client_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Connect();
         }
     }
 }

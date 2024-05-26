@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\imageslider\\server.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|d:\\hk2_2024\\laptrinhmangcanban\\projectimageslider\\imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\imageslider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\server.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,106 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1179696088:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1243473454:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Client.cs",
-              "DocumentMoniker": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Client.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Client.cs",
-              "ToolTip": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Client.cs",
-              "RelativeToolTip": "ImageSlider\\Client.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAAGYAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T08:11:08.802Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Server.Designer.cs",
-              "DocumentMoniker": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Server.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.Designer.cs",
               "RelativeDocumentMoniker": "ImageSlider\\Server.Designer.cs",
-              "ToolTip": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Server.Designer.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.Designer.cs",
               "RelativeToolTip": "ImageSlider\\Server.Designer.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAYwDwAAAAAAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAD4vz8AAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T03:00:43.22Z",
+              "WhenOpened": "2024-05-26T09:35:05.754Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Server.cs",
-              "DocumentMoniker": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Server.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Server.cs",
-              "ToolTip": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Server.cs",
-              "RelativeToolTip": "ImageSlider\\Server.cs",
-              "ViewState": "AQIAAKMAAAAAAAAAAAAAALEAAAATAAAA",
+              "DocumentIndex": 1,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Login.cs",
+              "RelativeDocumentMoniker": "ImageSlider\\Login.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Login.cs [Design]",
+              "RelativeToolTip": "ImageSlider\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T03:20:38.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Server.cs [Design]",
-              "DocumentMoniker": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Server.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Server.cs",
-              "ToolTip": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Server.cs [Design]",
-              "RelativeToolTip": "ImageSlider\\Server.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T02:33:11.06Z",
+              "WhenOpened": "2024-05-26T08:32:28.003Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Client.cs [Design]",
-              "DocumentMoniker": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Client.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Client.cs",
-              "ToolTip": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Client.cs [Design]",
-              "RelativeToolTip": "ImageSlider\\Client.cs [Design]",
+              "Title": "Server.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs",
+              "RelativeDocumentMoniker": "ImageSlider\\Server.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs [Design]",
+              "RelativeToolTip": "ImageSlider\\Server.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T01:15:14.142Z",
+              "WhenOpened": "2024-05-26T04:34:38.63Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Program.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Program.cs",
-              "ToolTip": "D:\\HK2_2024\\laptrinhmangcanban\\ProjectImageSlider\\ImageSlider\\Program.cs",
-              "RelativeToolTip": "ImageSlider\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "DocumentIndex": 0,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs",
+              "RelativeDocumentMoniker": "ImageSlider\\Server.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs",
+              "RelativeToolTip": "ImageSlider\\Server.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAASwNEAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T01:11:55.207Z",
+              "WhenOpened": "2024-05-24T03:20:38.096Z",
               "EditorCaption": ""
             }
           ]
