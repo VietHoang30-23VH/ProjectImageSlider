@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|c:\\users\\admin\\downloads\\projectimageslider\\imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0374142-47D0-41C9-B304-47F8C655FF73}|ImageSlider\\ImageSlider.csproj|solutionrelative:imageslider\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,18 +22,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Client.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Client.cs",
-              "RelativeDocumentMoniker": "ImageSlider\\Client.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Client.cs [Design]",
-              "RelativeToolTip": "ImageSlider\\Client.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "Server.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs",
+              "RelativeDocumentMoniker": "ImageSlider\\Server.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs [Design]",
+              "RelativeToolTip": "ImageSlider\\Server.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T14:37:45.319Z",
+              "WhenOpened": "2024-05-26T15:36:15.669Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Server.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs",
               "RelativeDocumentMoniker": "ImageSlider\\Server.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Downloads\\ProjectImageSlider\\ImageSlider\\Server.cs",
               "RelativeToolTip": "ImageSlider\\Server.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAuwGsAAAANAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAawDUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T03:20:38.096Z",
               "EditorCaption": ""

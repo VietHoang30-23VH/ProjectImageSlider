@@ -31,7 +31,7 @@
             this.btUpload = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPre = new System.Windows.Forms.Button();
-            this.Pathfile = new System.Windows.Forms.TextBox();
+            this.txtIP = new System.Windows.Forms.TextBox();
             this.tbNameImage = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbClients = new System.Windows.Forms.ListBox();
@@ -75,20 +75,21 @@
             this.btnPre.UseVisualStyleBackColor = true;
             this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
             // 
-            // Pathfile
+            // txtIP
             // 
-            this.Pathfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pathfile.Location = new System.Drawing.Point(156, 585);
-            this.Pathfile.Name = "Pathfile";
-            this.Pathfile.Size = new System.Drawing.Size(384, 30);
-            this.Pathfile.TabIndex = 4;
+            this.txtIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIP.Location = new System.Drawing.Point(156, 585);
+            this.txtIP.Name = "txtIP";
+            this.txtIP.ReadOnly = true;
+            this.txtIP.Size = new System.Drawing.Size(384, 30);
+            this.txtIP.TabIndex = 4;
             // 
             // tbNameImage
             // 
-            this.tbNameImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNameImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNameImage.Location = new System.Drawing.Point(12, 475);
             this.tbNameImage.Name = "tbNameImage";
+            this.tbNameImage.ReadOnly = true;
             this.tbNameImage.Size = new System.Drawing.Size(873, 30);
             this.tbNameImage.TabIndex = 6;
             // 
@@ -165,12 +166,13 @@
             this.Controls.Add(this.lbClients);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbNameImage);
-            this.Controls.Add(this.Pathfile);
+            this.Controls.Add(this.txtIP);
             this.Controls.Add(this.btnPre);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btUpload);
             this.Name = "Server";
             this.Text = "Server";
+            this.Load += new System.EventHandler(this.Server_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -181,7 +183,7 @@
         private System.Windows.Forms.Button btUpload;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPre;
-        private System.Windows.Forms.TextBox Pathfile;
+        private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.TextBox tbNameImage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox lbClients;

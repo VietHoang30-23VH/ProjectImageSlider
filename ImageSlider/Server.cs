@@ -37,6 +37,28 @@ namespace ImageSlider
             imageName = new List<string>();
         }
 
+        private void Server_Load(object sender, EventArgs e)
+        {
+            string ipAddress = GetLocalIPAddress();
+            txtIP.Text = ipAddress;
+        }
+
+        private string GetLocalIPAddress()
+        {
+            IPHostEntry host;
+            string localIP = "";
+            host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    localIP = ip.ToString();
+                    break;
+                }
+            }
+            return localIP;
+        }
+
         private void HandleClient(Socket client)
         {
             string clientName = "";
